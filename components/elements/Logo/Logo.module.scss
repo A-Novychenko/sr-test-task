@@ -1,13 +1,44 @@
+.link {
+    cursor: pointer;
+}
+
 .logo_wrap {
     display: flex;
+    align-items: center;
+    column-gap: 4px;
+
+    width: 269px;
+}
+
+.logo_icon {
+    width: 31px;
+    height: 18px;
 }
 
 .name {
-    color: #173d33;
-
+    font-family: var(--font-AllRoundGothic);
     font-size: 33px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: -1.32px;
+
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.label {
+    color: #173D33;
+    font-family: var(--font-CASaygon);
+    font-size: 10px;
+    line-height: 0.9;
+    letter-spacing: -0.4px;
+}
+
+.label_accent {
+    color: #97D28B;
 }
