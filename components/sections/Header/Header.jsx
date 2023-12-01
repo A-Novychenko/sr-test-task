@@ -1,4 +1,4 @@
-import {BurgerMenu} from "@/components/elements/BurgerMenu/BurgerMenu";
+import {BurgerMenu} from "@/components/elements/BurgerMenu/BurgerMenu.jsx";
 import {Logo} from "@/components/elements/Logo/Logo";
 
 import styles from "./Header.module.scss";

@@ -2,6 +2,7 @@ import {Fira_Sans, Oswald} from "next/font/google";
 import "./globals.css";
 
 import {Hedaer} from "@/components/sections/Header/Header";
+import {Footer} from "@/components/sections/Footer/Footer";
 
 const firaSans = Fira_Sans({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({children}) {
       <body>
         <Hedaer />
         {children}
+        <Footer />
       </body>
     </html>
   );

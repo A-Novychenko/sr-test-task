@@ -4,6 +4,11 @@
     left: 0;
 
     width: 100%;
+
+    background-color: rgba(244, 246, 250, 0.5);
+    backdrop-filter: blur(3px);
+
+    z-index: 999;
 }
 
 .header_wrap {
@@ -11,4 +16,5 @@
     justify-content: space-between;
 
     padding-top: 36px;
+    padding-bottom: 36px;
 }

@@ -1,0 +1,24 @@
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.value {
+    min-width: 270px;
+    color: var(--accent-color);
+    text-align: center;
+    font-family: var(--font-oswald);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.measure {
+    text-align: center;
+    font-family: var(--font-oswald);
+    font-size: 24px;
+    line-height: 1
+}

@@ -49,22 +49,9 @@
     backdrop-filter: blur(12.5px);
 }
 
-.close_btn {
+.close_btn_wrap {
     position: relative;
-
-    display: flex;
-    align-items: flex-end;
-
-    margin: 0;
-    padding-bottom: 8px;
     width: 100%;
-
-    border: none;
-    background-color: transparent;
-
-    color: var(--light-color);
-    font-size: 20px;
-    letter-spacing: -0.8px;
 
     ::after {
         position: absolute;
@@ -79,11 +66,27 @@
     }
 }
 
+.close_btn {
+    display: inline-flex;
+    align-items: flex-end;
+
+    margin: 0;
+    padding-bottom: 8px;
+
+    border: none;
+    background-color: transparent;
+
+    color: var(--light-color);
+    font-size: 20px;
+    letter-spacing: -0.8px;
+}
+
 .links_wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 450px;
+    height: 100vh;
+    height: calc(100vh - 132px);
 }
 
 .link_list {
@@ -119,4 +122,5 @@
 
 .social {
     display: flex;
+    gap: 8px;
 }

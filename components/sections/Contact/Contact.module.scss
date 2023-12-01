@@ -1,0 +1,56 @@
+.section {
+    padding-bottom: 36px;
+}
+
+.title {
+    text-align: center;
+}
+
+.contact_wrap {
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 24px;
+}
+
+.contact_box {
+    display: flex;
+    flex-direction: column;
+
+    font-style: normal;
+}
+
+.label {
+    padding-bottom: 8px;
+
+    text-align: justify;
+    letter-spacing: -0.64px;
+}
+
+.list {
+    padding-bottom: 24px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+}
+
+.link_phone {
+    padding-bottom: 12px;
+}
+
+.social_list {
+    display: flex;
+}
+
+.social_icon {
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+}
