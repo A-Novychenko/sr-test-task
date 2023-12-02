@@ -4,6 +4,11 @@
     padding: 36px 12px;
 
     background-color: #EAEDF1;
+
+    @media screen and (min-width:768px) {
+        padding: 36px 24px;
+        width: 342px;
+    }
 }
 
 .input_wrap {

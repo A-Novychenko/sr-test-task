@@ -1,5 +1,10 @@
 .list {
     padding-bottom: 36px;
+
+    @media screen and (min-width:768px) {
+        padding-bottom: 0;
+        width: 342px;
+    }
 }
 
 .item {
@@ -41,5 +46,37 @@
 }
 
 .content {
-    width: 296px;
+    margin-left: 8px;
+    width: 100%;
+    min-width: 200px;
+
+    text-align: justify;
+    font-size: 18px;
+    letter-spacing: -0.72px;
+
+    @media screen and (min-width:768px) {
+        margin-left: 16px;
+    }
+}
+
+.answer {
+    padding-top: 16px;
+
+    text-align: justify;
+    font-size: 14px;
+    letter-spacing: -0.56px;
+}
+
+.small_size {
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.large_size {
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: inline;
+    }
 }

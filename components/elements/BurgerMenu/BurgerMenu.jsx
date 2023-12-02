@@ -5,11 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 import menuIcon from "@/public/icons/menu.svg";
-import closeIcon from "@/public/icons/close.svg";
-import facebookIcon from "@/public/icons/facebook.svg";
-import instagramIcon from "@/public/icons/instagram.svg";
-
-import {ArrowRight} from "../icons/ArrowRight/ArrowRight";
+import {ArrowRightIcon} from "../icons/ArrowRightIcon";
+import {FacebookIcon} from "../icons/FacebookIcon";
+import {InstagramIcon} from "../icons/InstagramIcon";
+import {CloseIcon} from "../icons/CloseIcon";
 
 import styles from "./BurgerMenu.module.scss";
 
@@ -50,12 +49,7 @@ export const BurgerMenu = () => {
                     setIsOpenMenu(false);
                   }}
                 >
-                  <Image
-                    src={closeIcon}
-                    width={20}
-                    height={20}
-                    alt="close icon"
-                  />
+                  <CloseIcon />
                   <span>close</span>
                 </button>
               </div>
@@ -67,7 +61,7 @@ export const BurgerMenu = () => {
                       <li key={i}>
                         <Link className={styles.link} href={href}>
                           {name}
-                          <ArrowRight />
+                          <ArrowRightIcon />
                         </Link>
                       </li>
                     ))}
@@ -75,23 +69,21 @@ export const BurgerMenu = () => {
 
                 <ul className={styles.social}>
                   <li>
-                    <Link href="https://www.facebook.com" target="_blank">
-                      <Image
-                        src={facebookIcon}
-                        alt="facebook icon"
-                        width={24}
-                        height={24}
-                      />
+                    <Link
+                      className={styles.social_link}
+                      href="https://www.facebook.com"
+                      target="_blank"
+                    >
+                      <FacebookIcon />
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://www.instagram.com" target="_blank">
-                      <Image
-                        src={instagramIcon}
-                        alt="instagram icon"
-                        width={24}
-                        height={24}
-                      />
+                    <Link
+                      className={styles.social_link}
+                      href="https://www.instagram.com"
+                      target="_blank"
+                    >
+                      <InstagramIcon />
                     </Link>
                   </li>
                 </ul>

@@ -1,4 +1,5 @@
 import {Counter} from "@/components/elements/Counter/Counter";
+
 import styles from "./Electricity.module.scss";
 
 export const Electricity = () => {

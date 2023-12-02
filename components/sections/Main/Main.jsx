@@ -9,25 +9,29 @@ export const Main = () => {
   return (
     <section className={styles.section}>
       <div className="container">
-        <h1 className={styles.main_title}>RENEWABLE ENERGY For any task</h1>
         <div className={styles.content_wrap}>
-          <p className={styles.descr}>
-            Development and implementation of renewable non-polluting energy
-            sources, generating power generation using energy wind, sun, water,
-            biomass
-          </p>
-          <div className={styles.link_wrap}>
-            <Link className={styles.link} href="/">
-              <span className={styles.link_text}>Learn more</span>
-              <span className={styles.icon_wrap}>
-                <Image
-                  src={arrowRight}
-                  alt="arrow icon"
-                  width={16}
-                  height={16}
-                />
-              </span>
-            </Link>
+          <div className={styles.content_box}>
+            <h1 className={styles.main_title}>RENEWABLE ENERGY For any task</h1>
+            <div className={styles.inner}>
+              <p className={styles.descr}>
+                Development and implementation of renewable non-polluting energy
+                sources, generating power generation using energy wind, sun,
+                water, biomass
+              </p>
+              <div className={styles.link_wrap}>
+                <Link className={styles.link} href="/">
+                  <span className={styles.link_text}>Learn more</span>
+                  <span className={styles.icon_wrap}>
+                    <Image
+                      src={arrowRight}
+                      alt="arrow icon"
+                      width={16}
+                      height={16}
+                    />
+                  </span>
+                </Link>
+              </div>
+            </div>
           </div>
 
           <address>
@@ -44,6 +48,9 @@ export const Main = () => {
                 <Link href="mailto:office@ecosolution.com">
                   office@ecosolution.com
                 </Link>
+              </li>
+              <li>
+                <p className={styles.copyright}>ecosolution © 2023</p>
               </li>
             </ul>
           </address>

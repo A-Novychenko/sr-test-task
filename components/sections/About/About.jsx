@@ -11,14 +11,18 @@ export const About = () => {
   return (
     <section className={styles.section}>
       <div className="container">
-        <h2 className="title-font">Main values of our company</h2>
-        <p className={styles.descr}>
-          EcoSolution envisions a world where sustainable energy solutions power
-          a brighter and cleaner future for all. We aspire to be at the
-          forefront of the global shift towards renewable energy, leading the
-          way in innovative technologies that harness the power of nature to
-          meet the world&apos;s energy needs.
-        </p>
+        <div className={styles.wrap}>
+          <h2 className={`${"title-font"} ${styles.title}`}>
+            Main values of our company
+          </h2>
+          <p className={styles.descr}>
+            EcoSolution envisions a world where sustainable energy solutions
+            power a brighter and cleaner future for all. We aspire to be at the
+            forefront of the global shift towards renewable energy, leading the
+            way in innovative technologies that harness the power of nature to
+            meet the world&apos;s energy needs.
+          </p>
+        </div>
         <ul className={styles.cases_list}>
           <li className={styles.case}>
             <h3 className={styles.subtitle}>

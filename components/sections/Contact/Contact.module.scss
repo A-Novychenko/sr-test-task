@@ -1,9 +1,24 @@
 .section {
     padding-bottom: 36px;
+
+    @media screen and (min-width:768px) {
+        padding-bottom: 100px;
+    }
 }
 
 .title {
     text-align: center;
+
+    @media screen and (min-width:768px) {
+        padding-bottom: 40px;
+    }
+}
+
+.wrap {
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .contact_wrap {
@@ -11,6 +26,10 @@
     flex-direction: column;
 
     padding-bottom: 24px;
+
+    @media screen and (min-width:768px) {
+        width: 244px;
+    }
 }
 
 .contact_box {
@@ -49,8 +68,20 @@
     display: flex;
 }
 
-.social_icon {
+.social_link {
+    display: inline-block;
     padding: 12px;
     width: 48px;
     height: 48px;
+
+    color: var(--primary-color);
+
+    transition: color var(--animation);
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }

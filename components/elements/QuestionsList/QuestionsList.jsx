@@ -1,10 +1,9 @@
 "use client";
 
 import {useState} from "react";
-import Image from "next/image";
 
-import addIcon from "@/public/icons/add.svg";
-import minusIcon from "@/public/icons/minus.svg";
+import {AddIcon} from "../icons/AddIcon";
+import {MinusIcon} from "../icons/MinusIcon";
 
 import styles from "./QuestionsList.module.scss";
 
@@ -65,19 +64,30 @@ export const QuestionsList = () => {
                 onClick={() => toggleAnswer(_id)}
               >
                 {isOpenAnswer === _id ? (
-                  <Image
-                    src={minusIcon}
-                    alt="minus icon"
-                    width={16}
-                    height={16}
-                  />
+                  <>
+                    <span className={styles.small_size}>
+                      <MinusIcon />
+                    </span>
+                    <span className={styles.large_size}>
+                      <MinusIcon size={28} />
+                    </span>
+                  </>
                 ) : (
-                  <Image src={addIcon} alt="add icon" width={16} height={16} />
+                  <>
+                    <span className={styles.small_size}>
+                      <AddIcon />
+                    </span>
+                    <span className={styles.large_size}>
+                      <AddIcon size={28} />
+                    </span>
+                  </>
                 )}
               </button>
               <div className={styles.content}>
                 <p>{question}</p>
-                {isOpenAnswer === _id && <p>{answer}</p>}
+                {isOpenAnswer === _id && (
+                  <p className={styles.answer}>{answer}</p>
+                )}
               </div>
             </li>
           );

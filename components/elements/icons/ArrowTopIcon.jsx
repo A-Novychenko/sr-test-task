@@ -1,8 +1,8 @@
-export const ArrowRightSlider = () => (
+export const ArrowTopIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={36}
-    height={36}
+    width={16}
+    height={16}
     fill="none"
     stroke="currentColor"
   >
@@ -11,8 +11,7 @@ export const ArrowRightSlider = () => (
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeMiterlimit={10}
-      strokeWidth={1.5}
-      d="m21.646 8.893 9.105 9.105-9.105 9.105M5.251 17.999h25.245"
+      d="M3.953 6.38 8 2.333l4.046 4.047M8 13.667V2.447"
     />
   </svg>
 );

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const ArrowRight = ({size = 16}) => {
+export const ArrowRightIcon = ({size = 16}) => {
   return size === 16 ? (
     <svg
       xmlns="http://www.w3.org/2000/svg"

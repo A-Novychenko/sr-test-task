@@ -47,10 +47,23 @@
     border-radius: 25px;
     background: rgba(23, 61, 51, 0.75);
     backdrop-filter: blur(12.5px);
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        width: 320px;
+        height: 701px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: auto;
+        width: 365px;
+        height: 873px;
+    }
 }
 
 .close_btn_wrap {
     position: relative;
+
     width: 100%;
 
     ::after {
@@ -79,20 +92,36 @@
     color: var(--light-color);
     font-size: 20px;
     letter-spacing: -0.8px;
+    stroke: var(--accent-color);
+
+    transition: color var(--animation);
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+        stroke: var(--accent-color);
+    }
 }
 
 .links_wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+
     height: calc(100vh - 132px);
+
+    @media screen and (min-width: 768px) {
+        height: 100%;
+        height: calc(100% - 24px);
+    }
 }
 
 .link_list {
     display: inline-flex;
     flex-direction: column;
-
 
     gap: 8px;
     padding-top: 24px;
@@ -103,7 +132,8 @@
     align-items: center;
     gap: 8px;
 
-    color: var(--light-color);
+    // color: var(--light-color);//active-page???   --section?
+    color: rgba(255, 255, 255, 0.25);
     font-size: 24px;
     letter-spacing: -0.96px;
     stroke: var(--accent-color);
@@ -123,4 +153,17 @@
 .social {
     display: flex;
     gap: 8px;
+}
+
+.social_link {
+    color: var(--light-color);
+
+    transition: color var(--animation);
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
