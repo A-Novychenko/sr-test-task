@@ -4,6 +4,10 @@
     @media screen and (min-width: 768px) {
         padding-bottom: 100px;
     }
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 120px;
+    }
 }
 
 .title_wrap {
@@ -14,6 +18,11 @@
 
     @media screen and (min-width: 768px) {
         padding-bottom: 111px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 104px;
+        margin-bottom: 17px;
     }
 
     &::after {
@@ -42,5 +51,9 @@
         margin-right: auto;
         margin-left: auto;
         width: 368px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 491px;
     }
 }

@@ -20,13 +20,15 @@ export const Counter = () => {
 
   return (
     <div className={styles.wrap}>
-      <p className={styles.value}>
-        {value
-          .toLocaleString("en-US", {
-            useGrouping: false,
-          })
-          .replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
-      </p>
+      <div className={styles.value_wrap}>
+        <p className={styles.value}>
+          {value
+            .toLocaleString("en-US", {
+              useGrouping: false,
+            })
+            .replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
+        </p>
+      </div>
       <p className={styles.measure}>kWh</p>
     </div>
   );

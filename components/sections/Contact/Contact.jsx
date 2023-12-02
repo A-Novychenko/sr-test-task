@@ -110,6 +110,7 @@ export const Contact = () => {
               </ul>
             </div>
           </div>
+
           <ContactForm />
         </div>
       </div>

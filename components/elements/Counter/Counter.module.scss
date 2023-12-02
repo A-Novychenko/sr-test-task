@@ -3,10 +3,25 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
+
+    @media screen and (min-width: 768px) {
+        gap: 24px;
+    }
+}
+
+.value_wrap {
+    min-width: 270px;
+
+    @media screen and (min-width: 768px) {
+        min-width: 560px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        min-width: 900px;
+    }
 }
 
 .value {
-    min-width: 270px;
     color: var(--accent-color);
     text-align: center;
     font-family: var(--font-oswald);
@@ -17,6 +32,10 @@
 
     @media screen and (min-width: 768px) {
         font-size: 100px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 164px;
     }
 }
 
@@ -29,5 +48,10 @@
     @media screen and (min-width: 768px) {
         font-size: 28px;
         line-height: 1.7;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 48px;
+        line-height: 1;
     }
 }

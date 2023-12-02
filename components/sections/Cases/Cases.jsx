@@ -133,6 +133,7 @@ export const Cases = () => {
             },
             1280: {
               slidesPerView: 2,
+              spaceBetween: 48,
             },
           }}
         >

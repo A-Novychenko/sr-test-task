@@ -5,6 +5,10 @@
         padding-bottom: 0;
         width: 342px;
     }
+
+    @media screen and (min-width:1280px) {
+        width: 516px;
+    }
 }
 
 .item {
@@ -14,6 +18,11 @@
 
     padding-top: 16px;
     padding-bottom: 16px;
+
+    @media screen and (min-width:1280px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 
     &::before {
         position: absolute;
@@ -57,6 +66,13 @@
     @media screen and (min-width:768px) {
         margin-left: 16px;
     }
+
+    @media screen and (min-width:1280px) {
+        margin-left: 24px;
+
+        font-size: 24px;
+        letter-spacing: -0.96px;
+    }
 }
 
 .answer {
@@ -65,6 +81,13 @@
     text-align: justify;
     font-size: 14px;
     letter-spacing: -0.56px;
+
+    @media screen and (min-width:1280px) {
+        padding-top: 24px;
+
+        font-size: 16px;
+        letter-spacing: -0.64px;
+    }
 }
 
 .small_size {

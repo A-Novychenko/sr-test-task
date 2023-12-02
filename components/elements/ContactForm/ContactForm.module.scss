@@ -9,6 +9,11 @@
         padding: 36px 24px;
         width: 342px;
     }
+
+    @media screen and (min-width:1280px) {
+        padding: 48px;
+        width: 516px;
+    }
 }
 
 .input_wrap {
@@ -50,6 +55,11 @@
     border-bottom: 1px solid var(--accent-color);
     background-color: #EAEDF1;
 
+    @media screen and (min-width:1280px) {
+        font-size: 20px;
+        letter-spacing: -0.8px;
+    }
+
     &::placeholder {
         color: #BDBDBD;
         font-size: 18px;
@@ -57,6 +67,11 @@
         font-weight: 400;
         line-height: normal;
         letter-spacing: -0.72px;
+
+        @media screen and (min-width:1280px) {
+            font-size: 20px;
+            letter-spacing: -0.8px;
+        }
     }
 }
 
@@ -77,6 +92,11 @@
     border-bottom: 1px solid var(--accent-color);
     background-color: #EAEDF1;
 
+    @media screen and (min-width:1280px) {
+        font-size: 20px;
+        letter-spacing: -0.8px;
+    }
+
     &::placeholder {
         color: #BDBDBD;
         font-size: 18px;
@@ -84,6 +104,11 @@
         font-weight: 400;
         line-height: normal;
         letter-spacing: -0.72px;
+
+        @media screen and (min-width:1280px) {
+            font-size: 20px;
+            letter-spacing: -0.8px;
+        }
     }
 }
 
@@ -108,12 +133,23 @@
     padding: 4px 4px 4px 16px;
     margin-left: auto;
 
+    color: var(--primary-color);
     line-height: 1.12;
     letter-spacing: -0.64px;
 
+    background-color: #EAEDF1;
     border-radius: 20px;
-    border: 1px solid #97D28B;
+    border: 1px solid var(--accent-color);
 
+    transition: color var(--animation), background-color var(--animation);
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        background-color: var(--primary-color);
+    }
 }
 
 .btn_inner {
@@ -125,7 +161,7 @@
     padding: 8px;
 
     border-radius: 50%;
-    background: #97D28B;
+    background: var(--accent-color);
 }
 
 .loader_wrap {
@@ -159,7 +195,7 @@
 .notify_msg {
     padding: 40px;
 
-    color: white;
+    color: var(--light-color);
     font-size: 40px;
     text-align: center;
 

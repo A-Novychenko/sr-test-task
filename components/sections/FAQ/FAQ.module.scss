@@ -4,6 +4,10 @@
     @media screen and (min-width:768px) {
         padding-bottom: 100px;
     }
+
+    @media screen and (min-width:1280px) {
+        padding-bottom: 120px;
+    }
 }
 
 .mobile {
@@ -27,6 +31,24 @@
     text-align: justify;
     font-size: 18px;
     letter-spacing: -0.72px;
+
+    @media screen and (min-width:1280px) {
+        font-size: 24px;
+        letter-spacing: -0.96px;
+    }
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 347px;
+
+    @media screen and (min-width:1280px) {
+        margin-right: 31px;
+        width: 399px;
+    }
 }
 
 .link_box {
@@ -59,13 +81,4 @@
         color: var(--accent-color);
         background-color: var(--primary-color);
     }
-}
-
-.wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    width: 347px;
-
 }

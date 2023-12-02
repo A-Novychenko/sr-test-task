@@ -27,6 +27,7 @@ export const About = () => {
           <li className={styles.case}>
             <h3 className={styles.subtitle}>
               <Image
+                className={styles.icon}
                 src={opennessIcon}
                 alt="openness icon"
                 width={16}
@@ -41,6 +42,7 @@ export const About = () => {
           <li className={styles.case}>
             <h3 className={styles.subtitle}>
               <Image
+                className={styles.icon}
                 src={responsibilityIcon}
                 alt="responsibility icon"
                 width={16}
@@ -56,6 +58,7 @@ export const About = () => {
           <li className={styles.case}>
             <h3 className={styles.subtitle}>
               <Image
+                className={styles.icon}
                 src={innovationIcon}
                 alt="innovation icon"
                 width={16}
@@ -70,6 +73,7 @@ export const About = () => {
           <li className={styles.case}>
             <h3 className={styles.subtitle}>
               <Image
+                className={styles.icon}
                 src={qualityIcon}
                 alt="quality icon"
                 width={16}

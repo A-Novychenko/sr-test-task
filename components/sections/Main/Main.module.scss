@@ -4,21 +4,9 @@
     @media screen and (min-width: 768px) {
         margin-top: 243px;
     }
-}
 
-.main_title {
-    padding-bottom: 24px;
-
-    font-family: var(--font-oswald);
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 1;
-    text-transform: uppercase;
-
-    @media screen and (min-width: 768px) {
-        padding-bottom: 0;
-
-        font-size: 48px;
+    @media screen and (min-width: 1280px) {
+        margin-top: 264px;
     }
 }
 
@@ -28,6 +16,10 @@
 
     @media screen and (min-width: 768px) {
         padding-bottom: 540px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 764px;
     }
 
     &::after {
@@ -40,13 +32,26 @@
         width: 100%;
         height: 210px;
 
-        background: url(../../../public/imgs/wind-turbine-clean-energy.jpg), lightgray 50% / cover no-repeat;
+        background: url(../../../public/imgs/wind-turbine-clean-energy-mob.jpg), lightgray 50%;
         background-repeat: no-repeat;
         background-size: cover;
 
         @media screen and (min-width: 768px) {
             bottom: 68px;
             height: 440px;
+
+            background: url(../../../public/imgs/wind-turbine-clean-energy-tab.jpg), lightgray 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media screen and (min-width: 1280px) {
+            bottom: 128px;
+            height: 600px;
+
+            background: url(../../../public/imgs/wind-turbine-clean-energy-desk.jpg), lightgray 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 }
@@ -77,6 +82,35 @@
             bottom: 0
         }
     }
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 12px;
+    }
+}
+
+.main_title {
+    padding-bottom: 24px;
+
+    font-family: var(--font-oswald);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 0;
+
+        font-size: 48px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 485px;
+
+        font-size: 64px;
+    }
 }
 
 .inner {
@@ -96,6 +130,11 @@
         width: 342px;
 
         text-align: start;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 96px;
+        width: 363px;
     }
 }
 
@@ -127,8 +166,20 @@
     padding: 4px 4px 4px 16px;
     height: 39px;
 
+    color: var(--primary-color);
+
     border-radius: 32px;
     border: 1px solid var(--accent-color);
+
+    transition: color var(--animation), background-color var(--animation);
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        background-color: var(--primary-color);
+    }
 }
 
 .link_text {
@@ -170,6 +221,18 @@
 
         &>li:last-child {
             margin-left: 50px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        justify-content: flex-start;
+
+        &>li:first-child {
+            margin-right: 328px;
+        }
+
+        &>li:last-child {
+            margin-left: 167px;
         }
     }
 }
