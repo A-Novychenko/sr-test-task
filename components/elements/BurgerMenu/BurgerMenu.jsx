@@ -82,7 +82,6 @@ export const BurgerMenu = () => {
                             closeMenu();
                             scrollTo();
                           }}
-                          // onSetActive={handleSetActive}
                         >
                           {title}
                           <ArrowRightIcon />

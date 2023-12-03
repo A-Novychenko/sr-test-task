@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 import {ContactForm} from "@/components/elements/ContactForm/ContactForm";
-
 import {FacebookIcon} from "@/components/elements/icons/FacebookIcon";
 import {InstagramIcon} from "@/components/elements/icons/InstagramIcon";
 import callIcon from "@/public/icons/call.svg";

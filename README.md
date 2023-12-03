@@ -48,7 +48,3 @@ Contributions are welcome! If you find issues or wish to enhance the website, fe
 ## Deployment
 
 The website is automatically deployed using Vercel upon changes to the `main` branch.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).

@@ -27,10 +27,6 @@
   overflow: hidden;
 }
 
-.active {
-  color: "red"
-}
-
 body {
   background-color: var(--main-bg-color);
 

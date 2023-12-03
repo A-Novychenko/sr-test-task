@@ -2,7 +2,6 @@ import Link from "next/link";
 
 import {Logo} from "@/components/elements/Logo/Logo";
 import {ScrollToTopBtn} from "@/components/elements/btns/ScrollToTopBtn/ScrollToTopBtn";
-
 import {FacebookIcon} from "@/components/elements/icons/FacebookIcon";
 import {InstagramIcon} from "@/components/elements/icons/InstagramIcon";
 
