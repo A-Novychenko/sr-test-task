@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import {Logo} from "@/components/elements/Logo/Logo";
-import {ScrollToTopBtn} from "@/components/elements/btns/ScrollToTopBtn/ScrollToTopBtn";
+import {ScrollToMainBtn} from "@/components/elements/btns/ScrollToMainBtn/ScrollToMainBtn";
 import {FacebookIcon} from "@/components/elements/icons/FacebookIcon";
 import {InstagramIcon} from "@/components/elements/icons/InstagramIcon";
 
@@ -36,7 +36,7 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            <ScrollToTopBtn />
+            <ScrollToMainBtn />
           </div>
         </div>
 
