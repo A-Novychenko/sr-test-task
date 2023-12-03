@@ -76,7 +76,7 @@ export const Cases = () => {
   };
 
   return (
-    <section className={styles.section} id="cases">
+    <section className="section" id="cases">
       <div className="container">
         <div className={styles.wrap}>
           <h2 className={`${"title-font"} ${styles.title}`}>

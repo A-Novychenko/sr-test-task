@@ -13,7 +13,7 @@ import styles from "./Contact.module.scss";
 
 export const Contact = () => {
   return (
-    <section className={styles.section} id="contact">
+    <section className="section" id="contact">
       <div className="container">
         <h2 className={`${"title-font"} ${styles.title}`}>Contact us</h2>
         <div className={styles.wrap}>
@@ -79,7 +79,7 @@ export const Contact = () => {
                         width={24}
                         height={24}
                       />
-                      79005, Ukraine, Lviv, street. Shota Rustaveli, 7
+                      79005, Ukraine, Lviv, Shota Rustaveli Street, 7
                     </Link>
                   </li>
                 </ul>

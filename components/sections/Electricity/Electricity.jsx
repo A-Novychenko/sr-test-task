@@ -4,12 +4,12 @@ import styles from "./Electricity.module.scss";
 
 export const Electricity = () => {
   return (
-    <section className={styles.section} id="electricity">
+    <section className="section" id="electricity">
       <div className="container">
         <div className={styles.title_wrap}>
-          <h3 className={`${"title-font"} ${styles.title}`}>
+          <h2 className={`${"title-font"} ${styles.title}`}>
             Electricity we produced for all time
-          </h3>
+          </h2>
         </div>
         <Counter />
       </div>

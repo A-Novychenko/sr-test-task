@@ -5,7 +5,7 @@ import styles from "./FAQ.module.scss";
 
 export const FAQ = () => {
   return (
-    <section className={styles.section} id="FAQ">
+    <section className="section" id="FAQ">
       <div className="container">
         <div className={styles.mobile}>
           <h2 className="title-font">Frequently Asked Questions</h2>

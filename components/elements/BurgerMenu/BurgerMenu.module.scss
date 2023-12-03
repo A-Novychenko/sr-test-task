@@ -150,6 +150,10 @@
     }
 }
 
+.active {
+    color: var(--light-color)
+}
+
 .social {
     display: flex;
     gap: 8px;

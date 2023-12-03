@@ -22,27 +22,30 @@ const scrollTo = (offset) => {
   });
 };
 
+const links = [
+  {title: "Main", name: "main"},
+  {title: "About", name: "about"},
+  {title: "Cases", name: "cases"},
+  {title: "FAQ", name: "FAQ"},
+  {title: "Contact Us", name: "contact"},
+];
+
 export const BurgerMenu = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
-  const links = [
-    {title: "Main", name: "main"},
-    {title: "About", name: "about"},
-    {title: "Cases", name: "cases"},
-    {title: "FAQ", name: "FAQ"},
-    {title: "Contact Us", name: "contact"},
-  ];
+  const openMenu = () => {
+    setIsOpenMenu(true);
+    document.body.classList.toggle("modal-open", true);
+  };
+  const closeMenu = () => {
+    setIsOpenMenu(false);
+    document.body.classList.toggle("modal-open", false);
+  };
 
   return (
     <>
       {!isOpenMenu && (
-        <button
-          className={styles.menu_btn}
-          type="button"
-          onClick={() => {
-            setIsOpenMenu(true);
-          }}
-        >
+        <button className={styles.menu_btn} type="button" onClick={openMenu}>
           <Image src={menuIcon} width={16} height={16} alt="menu icon" />
         </button>
       )}
@@ -55,9 +58,7 @@ export const BurgerMenu = () => {
                 <button
                   className={styles.close_btn}
                   type="button"
-                  onClick={() => {
-                    setIsOpenMenu(false);
-                  }}
+                  onClick={closeMenu}
                 >
                   <CloseIcon />
                   <span>close</span>
@@ -71,15 +72,17 @@ export const BurgerMenu = () => {
                       <li key={i}>
                         <Link
                           className={styles.link}
+                          activeClass={styles.active}
                           to={name}
                           spy={true}
                           smooth={true}
                           duration={800}
                           offset={-111}
                           onClick={() => {
+                            closeMenu();
                             scrollTo();
-                            setIsOpenMenu(false);
                           }}
+                          // onSetActive={handleSetActive}
                         >
                           {title}
                           <ArrowRightIcon />
