@@ -1,8 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![EcoSolution](/public/ecosolution-readme.jpg)
+
+# EcoSolution Website
+
+This repository contains the source code and assets for the EcoSolution website. The website showcases our initiative towards developing and implementing renewable, non-polluting energy sources for power generation using wind, solar, water, and biomass energies.
+
+## Website Overview
+
+The [EcoSolution website](https://ecosolution-beta.vercel.app) aims to inform users about our mission, projects, and the technologies we use for sustainable energy generation. It provides insights into various renewable energy sources and their implementation for clean power generation.
+
+## Features
+
+- Overview of our projects related to wind, solar, water, and biomass energy.
+- Information about the technologies and methods used for sustainable power generation.
+- Contact details and ways to get involved or contribute to our cause.
+
+## Technologies Used
+
+- React.js for front-end development
+- HTML, CSS, and JavaScript
+- Vercel for deployment
 
 ## Getting Started
 
-First, run the development server:
+To explore or contribute to the website, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/ecosolution-website.git`
+2. Navigate to the project directory: `cd ecosolution-website`
+3. Install dependencies: `npm install` or `yarn`
+4. Run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +39,16 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Contributions are welcome! If you find issues or wish to enhance the website, feel free to submit a pull request. Please follow the guidelines mentioned in the CONTRIBUTING.md file.
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The website is automatically deployed using Vercel upon changes to the `main` branch.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the [MIT License](LICENSE).
