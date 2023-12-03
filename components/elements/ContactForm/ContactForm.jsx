@@ -83,7 +83,7 @@ export const ContactForm = () => {
             <div className={styles.input_wrap}>
               <label className={styles.label}>* Phone:</label>
               <input
-                type="phone"
+                type="tel"
                 {...register("phone", {required: true})}
                 className={styles.input}
                 style={{borderColor: errors.phone ? "#D28B8B" : "#97D28B"}}

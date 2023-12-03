@@ -28,7 +28,7 @@ export const Main = () => {
               <li>
                 <Link
                   href="https://maps.app.goo.gl/pDcqs4SzPGA7h9Vg7"
-                  target="_blanc"
+                  target="_blank"
                 >
                   79005, Ukraine, Lviv, Shota Rustaveli Street, 7
                 </Link>
