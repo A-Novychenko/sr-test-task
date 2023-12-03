@@ -9,7 +9,7 @@ import styles from "./About.module.scss";
 
 export const About = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="about">
       <div className="container">
         <div className={styles.wrap}>
           <h2 className={`${"title-font"} ${styles.title}`}>

@@ -4,7 +4,7 @@ import styles from "./Electricity.module.scss";
 
 export const Electricity = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="electricity">
       <div className="container">
         <div className={styles.title_wrap}>
           <h3 className={`${"title-font"} ${styles.title}`}>

@@ -1,13 +1,12 @@
 import Link from "next/link";
-import Image from "next/image";
 
-import arrowRight from "@/public/icons/arrow-right.svg";
+import {LearnMoreBtn} from "@/components/elements/btns/LearnMoreBtn/LearnMoreBtn";
 
 import styles from "./Main.module.scss";
 
 export const Main = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="main">
       <div className="container">
         <div className={styles.content_wrap}>
           <div className={styles.content_box}>
@@ -19,17 +18,7 @@ export const Main = () => {
                 water, biomass
               </p>
               <div className={styles.link_wrap}>
-                <Link className={styles.link} href="/">
-                  <span className={styles.link_text}>Learn more</span>
-                  <span className={styles.icon_wrap}>
-                    <Image
-                      src={arrowRight}
-                      alt="arrow icon"
-                      width={16}
-                      height={16}
-                    />
-                  </span>
-                </Link>
+                <LearnMoreBtn />
               </div>
             </div>
           </div>

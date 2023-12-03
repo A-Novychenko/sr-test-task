@@ -1,8 +1,6 @@
-import Link from "next/link";
-
 import {BurgerMenu} from "@/components/elements/BurgerMenu/BurgerMenu.jsx";
 import {Logo} from "@/components/elements/Logo/Logo";
-import {ArrowBottomIcon} from "@/components/elements/icons/ArrowBottomIcon";
+import {GetInTouchBtn} from "@/components/elements/btns/GetInTouchBtn/GetInTouchBtn";
 
 import styles from "./Header.module.scss";
 
@@ -14,10 +12,7 @@ export const Hedaer = () => {
           <Logo />
           <div className={styles.btn_wrap}>
             <BurgerMenu />
-            <Link href="" className={styles.get_in_touch}>
-              Get in touch
-              <ArrowBottomIcon />
-            </Link>
+            <GetInTouchBtn />
           </div>
         </div>
       </div>

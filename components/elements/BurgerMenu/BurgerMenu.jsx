@@ -1,8 +1,9 @@
 "use client";
 
 import {useState} from "react";
-import Link from "next/link";
+import * as LinkNext from "next/link";
 import Image from "next/image";
+import {Link, scroller} from "react-scroll";
 
 import menuIcon from "@/public/icons/menu.svg";
 import {ArrowRightIcon} from "../icons/ArrowRightIcon";
@@ -12,15 +13,24 @@ import {CloseIcon} from "../icons/CloseIcon";
 
 import styles from "./BurgerMenu.module.scss";
 
+const scrollTo = (offset) => {
+  scroller.scrollTo("scroll-to-element", {
+    duration: 800,
+    delay: 100,
+    smooth: "easeInOutQuart",
+    offset: offset,
+  });
+};
+
 export const BurgerMenu = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const links = [
-    {name: "Main", href: "/"},
-    {name: "About", href: "/"},
-    {name: "Cases", href: "/"},
-    {name: "FAQ", href: "/"},
-    {name: "Contact Us", href: "/"},
+    {title: "Main", name: "main"},
+    {title: "About", name: "about"},
+    {title: "Cases", name: "cases"},
+    {title: "FAQ", name: "FAQ"},
+    {title: "Contact Us", name: "contact"},
   ];
 
   return (
@@ -57,10 +67,21 @@ export const BurgerMenu = () => {
               <div className={styles.links_wrap}>
                 <ul className={styles.link_list}>
                   {links &&
-                    links.map(({name, href}, i) => (
+                    links.map(({name, title}, i) => (
                       <li key={i}>
-                        <Link className={styles.link} href={href}>
-                          {name}
+                        <Link
+                          className={styles.link}
+                          to={name}
+                          spy={true}
+                          smooth={true}
+                          duration={800}
+                          offset={-111}
+                          onClick={() => {
+                            scrollTo();
+                            setIsOpenMenu(false);
+                          }}
+                        >
+                          {title}
                           <ArrowRightIcon />
                         </Link>
                       </li>
@@ -69,22 +90,22 @@ export const BurgerMenu = () => {
 
                 <ul className={styles.social}>
                   <li>
-                    <Link
+                    <LinkNext
                       className={styles.social_link}
                       href="https://www.facebook.com"
                       target="_blank"
                     >
                       <FacebookIcon />
-                    </Link>
+                    </LinkNext>
                   </li>
                   <li>
-                    <Link
+                    <LinkNext
                       className={styles.social_link}
                       href="https://www.instagram.com"
                       target="_blank"
                     >
                       <InstagramIcon />
-                    </Link>
+                    </LinkNext>
                   </li>
                 </ul>
               </div>
