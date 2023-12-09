@@ -11,12 +11,12 @@ export const Counter = () => {
 
   useEffect(() => {
     intervalId.current = setInterval(() => {
-      setValue(value + 1);
+      setValue((pS) => pS + 1);
     }, 1000);
     return () => {
       clearInterval(intervalId.current);
     };
-  }, [value]);
+  }, []);
 
   return (
     <div className={styles.wrap}>
