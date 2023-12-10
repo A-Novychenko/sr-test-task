@@ -3,6 +3,7 @@
 import {useState} from "react";
 import Image from "next/image";
 import {useForm} from "react-hook-form";
+import useFormPersist from "react-hook-form-persist";
 import {Hourglass} from "react-loader-spinner";
 
 import arrowRight from "@/public/icons/arrow-right.svg";
@@ -17,8 +18,13 @@ export const ContactForm = () => {
     register,
     handleSubmit,
     reset,
+    watch,
+    setValue,
     formState: {errors},
   } = useForm();
+
+  useFormPersist("form", {watch, setValue});
+
   const onSubmit = async ({name, email, phone, msg}) => {
     try {
       setLoad(true);
