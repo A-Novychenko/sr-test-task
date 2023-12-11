@@ -43,6 +43,7 @@ export const ContactForm = () => {
       reset();
       setLoad(false);
       setVisibleMsg("success");
+      window.localStorage.removeItem("form");
       setTimeout(() => {
         setVisibleMsg("");
       }, 3000);
@@ -52,6 +53,7 @@ export const ContactForm = () => {
       setTimeout(() => {
         setVisibleMsg("");
       }, 3000);
+    } finally {
     }
   };
 
